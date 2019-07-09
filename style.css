@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, PingFang SC;
+
+}
+
+@font-face {
+    font-family: "campton";
+    
+    src: url(./image/Campton-BoldDEMO.otf);
+  }
+
+  @font-face {
+    font-family: 'pingfang';
+    src: url(./image/PingFang.ttc);
+}
+
+body {
+    background-color: #1A1A1A;
+}
+
+#title {
+    width: 960px;
+    display: flex;
+    margin: 160px auto 0;
+    flex-direction: column;
+}
+
+#title h1 {
+    font-size: 52px;
+    line-height: 72px;
+    color: white;
+    width: 520px;
+}
+
+.name {
+    margin: 32px 0 0 0;
+}
+
+#title h2 {
+    font-size: 13px;
+    line-height: 20px;
+    color: white;
+    font-weight: 300;
+}
+
+#title p {
+    font-size: 13px;
+    line-height: 20px;
+    color: #8D8D8D;
+    font-weight: 300;
+}
+
+#image {
+    width: 960px;
+    height: 760px;
+    display: flex;
+    margin: 72px auto 0;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+
+#image .content .tag1 {
+    position: absolute;
+    bottom: 0;
+    left: 346px;
+    font-size: 52px;
+    line-height: 72px;
+    color: white;
+    padding: 0 0 32px 0;
+    font-weight: bold;
+    opacity: 0;
+    font-family: "pingfang";
+    
+}
+
+#image .image-1:hover ~ .tag1{
+    opacity: 1;
+} 
+
+#image .image-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#image .content {
+    position: relative;
+}
+
+#image .cm .tag2 {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-family: "pingfang";
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 72px;
+    color: white;
+    padding: 0 32px 24px 0;
+    opacity: 0;
+}
+
+#image .cm .cm-image:hover~.tag2 {
+    opacity: 1;
+}
+
+.tag3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 52px;
+    line-height: 72px;
+    color: white;
+    padding: 0 32px 16px 0;
+    letter-spacing: inherit;
+    opacity: 0;
+    font-family: "pingfang";
+    font-weight: 900;
+}
+
+
+
+.abyss-image:hover~.tag3 {
+    opacity: 1;
+}
+
+#contact {
+    width: 960px;
+    height: 96px;
+    margin: 72px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+#contact h3 {
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#contact p {
+    color: #8D8D8D;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 20px;
+}
