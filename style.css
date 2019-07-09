@@ -96,7 +96,7 @@ body {
     bottom: 0;
     right: 0;
     position: absolute;
-    font-family: "pingfang";
+    
     font-weight: 900;
     font-size: 52px;
     line-height: 72px;
@@ -119,7 +119,7 @@ body {
     padding: 0 32px 16px 0;
     letter-spacing: inherit;
     opacity: 0;
-    font-family: "pingfang";
+    
     font-weight: 900;
 }
 
