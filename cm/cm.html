@@ -10,6 +10,14 @@
 </head>
 
 <body>
+    <div id="nav">
+        <a href="/EKLLL/index.html">EKLLL</a>
+        <div class="jump">
+            <a href="#" class="Prev">Prev</a>
+            <a href="#" class="Next">Next</a>
+        </div>
+    </div>
+
 
     <div id="zuopin">
         <img src="./cm-img/1-1.jpg" alt="">
@@ -32,7 +40,24 @@
         <img src="./cm-img/16.jpg" alt="">
     </div>
 
-    
+
+
+    <script type="text/javascript">
+
+        var prevScrollpos = window.pageYOffset:
+            window.onscroll = function () {
+                var currentScrollpos = window.pageYOffset;
+                if (prevScrollpos > currentScrollpos) {
+                    document.getElementById("nav").style.top = "0";
+                } else {
+                    document.getElementById("nav").style.top = "-100px";
+                }
+
+                prevScrollpos = currentScrollpos;
+            }
+
+    </script>
+
 </body>
 
 </html>

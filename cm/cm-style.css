@@ -1,8 +1,47 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+@font-face {
+    font-family: "campton";
+    
+    src: url(./image/Campton-BoldDEMO.otf);
+  }
+
+  @font-face {
+    font-family: 'pingfang';
+    src: url(./image/PingFang.ttc);
+}
+
+#nav {
+    width: 960px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+#nav a{
+    text-decoration: none;
+    font-family: "campton";
+    font-weight: bold;
+    color: #191919;
+    font-size: 13px;
+    transition: top 0.8s;
+
+}
+
+#nav .Prev{
+    padding: 0 24px 0 0;
+}
+
 
 #zuopin {
     width: 960px;
@@ -10,6 +49,5 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    
-}
 
+}
