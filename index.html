@@ -10,45 +10,48 @@
 </head>
 
 <body>
-    <div id="title">
-        <h1>我为数字产品设计可靠但不引人注目的界面</h1>
-        <div class="name">
-            <h2>罗毅坤</h2>
-            <p>UI/UX designer</p>
-        </div>
-    </div>
-
-    <div id="image">
-        <a href="http://www.google.com">
-            <div class="content">
-                <img class="image-1" src="./image/Rectangle.png" alt="">
-                <p class="tag1">简历</p>
+    <div class='wrapper'>
+            <div class='smooth'>
+        <div id="title">
+            <h1>我为数字产品设计可靠但不引人注目的界面</h1>
+            <div class="name">
+                <h2>罗毅坤</h2>
+                <p>UI/UX designer</p>
             </div>
-        </a>
-
-        <div class="image-2">
-            <div class="cm">
-                <a href="./cm/cm.html">
-                    <div class="content">
-
-                        <img class="cm-image" src="./image/Rectangle Copy.png" alt="">
-
-                        <p class="tag2">在线商城</p>
-                    </div>
-                </a>
-            </div>
-
-
-
-            <div class="content">
-                <img class="abyss-image" src="./image/Rectangle Copy 2.png" alt="">
-                <p class="tag3">匿名论坛</p>
-            </div>
-
         </div>
 
-    </div>
+        <div id="image">
+            <a href="http://www.google.com">
+                <div class="content">
+                    <img class="image-1" src="./image/Rectangle.png" alt="">
+                    <p class="tag1">简历</p>
+                </div>
+            </a>
 
+            <div class="image-2">
+                <div class="cm">
+                    <a href="./cm/cm.html">
+                        <div class="content">
+
+                            <img class="cm-image" src="./image/Rectangle Copy.png" alt="">
+
+                            <p class="tag2">在线商城</p>
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="content">
+                    <img class="abyss-image" src="./image/Rectangle Copy 2.png" alt="">
+                    <p class="tag3">匿名论坛</p>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </div>
 
 
     <div id="contact">
@@ -66,134 +69,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <script>$(document).ready(function () {
-            // $fn.scrollSpeed(step, speed, easing);
-            jQuery.scrollSpeed(200, 800);
-        });
 
-        // Custom scrolling speed with jQuery
-        // Source: github.com/ByNathan/jQuery.scrollSpeed
-        // Version: 1.0.2
-
-        (function ($) {
-
-            jQuery.scrollSpeed = function (step, speed, easing) {
-
-                var $document = $(document),
-                    $window = $(window),
-                    $body = $('html, body'),
-                    option = easing || 'default',
-                    root = 0,
-                    scroll = false,
-                    scrollY,
-                    scrollX,
-                    view;
-
-                if (window.navigator.msPointerEnabled)
-
-                    return false;
-
-                $window.on('mousewheel DOMMouseScroll', function (e) {
-
-                    var deltaY = e.originalEvent.wheelDeltaY,
-                        detail = e.originalEvent.detail;
-                    scrollY = $document.height() > $window.height();
-                    scrollX = $document.width() > $window.width();
-                    scroll = true;
-
-                    if (scrollY) {
-
-                        view = $window.height();
-
-                        if (deltaY < 0 || detail > 0)
-
-                            root = (root + view) >= $document.height() ? root : root += step;
-
-                        if (deltaY > 0 || detail < 0)
-
-                            root = root <= 0 ? 0 : root -= step;
-
-                        $body.stop().animate({
-
-                            scrollTop: root
-
-                        }, speed, option, function () {
-
-                            scroll = false;
-
-                        });
-                    }
-
-                    if (scrollX) {
-
-                        view = $window.width();
-
-                        if (deltaY < 0 || detail > 0)
-
-                            root = (root + view) >= $document.width() ? root : root += step;
-
-                        if (deltaY > 0 || detail < 0)
-
-                            root = root <= 0 ? 0 : root -= step;
-
-                        $body.stop().animate({
-
-                            scrollLeft: root
-
-                        }, speed, option, function () {
-
-                            scroll = false;
-
-                        });
-                    }
-
-                    return false;
-
-                }).on('scroll', function () {
-
-                    if (scrollY && !scroll) root = $window.scrollTop();
-                    if (scrollX && !scroll) root = $window.scrollLeft();
-
-                }).on('resize', function () {
-
-                    if (scrollY && !scroll) view = $window.height();
-                    if (scrollX && !scroll) view = $window.width();
-
-                });
-            };
-
-            jQuery.easing.default = function (x, t, b, c, d) {
-
-                return -c * ((t = t / d - 1) * t * t * t - 1) + b;
-            };
-
-        })(jQuery);</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>
-
-        $(document).ready(function () {
-
-            $('#image .content').mousemove(function (e) {
-                var offset = $(this).offset();
-                var relX = e.pageX - offset.left;
-                var relY = e.pageY - offset.top;
-                var offsetMinX = $(this).width();
-                var offsetMinY = $(this).height();
-                var currentX = relX += offsetMinX * -0.5;
-                var currentY = relY += offsetMinY * -0.5;
-                var newX = currentX / 4500000;
-                var newY = currentY / 5000000;
-                $(this).css('transform', "matrix3d(1.025,0,0," + -newX + ",0,1.025,0," + -newY + ",0,0,1,0,0,0,0,1)");
-            });
-            $("#image .content").mouseout(function () {
-                $(this).css('transform', "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
-            });
-
-        });
-
-
-
-    </script>
 
 </body>
 
