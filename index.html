@@ -66,10 +66,34 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+    <script>
+
+        $(document).ready(function () {
+
+            $('.content').mousemove(function (e) {
+                var offset = $(this).offset();
+                var relX = e.pageX - offset.left;
+                var relY = e.pageY - offset.top;
+                var offsetMinX = $(this).width();
+                var offsetMinY = $(this).height();
+                var currentX = relX += offsetMinX * -0.2;
+                var currentY = relY += offsetMinY * -0.2;
+                var newX = currentX / 4000000;
+                var newY = currentY / 4000000;
+                $(this).css('transform', "matrix3d(1.025,0,0," + -newX + ",0,1.025,0," + -newY + ",0,0,1,0,0,0,0,1)");
+            });
+            $(".content").mouseout(function () {
+                $(this).css('transform', "matrix3d(1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1)");
+            });
+
+        });
+
+
+
+    </script>
 
 </body>
 
