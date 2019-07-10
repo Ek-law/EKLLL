@@ -22,7 +22,7 @@
     top: 0;
     position: fixed;
     background-color: white;
-    
+    transition: top 0.8s;
     
 }
 
@@ -50,7 +50,7 @@
     font-weight: bold;
     color: #191919;
     font-size: 13px;
-    transition: top 0.8s;
+    
     max-width: 960px;
 
 }
