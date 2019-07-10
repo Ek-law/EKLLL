@@ -8,37 +8,54 @@
 
 @font-face {
     font-family: "campton";
-    
-    src: url(./image/Campton-BoldDEMO.otf);
-  }
 
-  @font-face {
+    src: url(./image/Campton-BoldDEMO.otf);
+}
+
+@font-face {
     font-family: 'pingfang';
     src: url(./image/PingFang.ttc);
 }
 
 #nav {
-    width: 960px;
-    height: 80px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    top: 0;
+    position: fixed;
     background-color: white;
+    
+    
 }
 
-#nav a{
+
+.Align {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    
+}
+
+
+
+#nav a {
     text-decoration: none;
     font-family: "campton";
     font-weight: bold;
     color: #191919;
     font-size: 13px;
     transition: top 0.8s;
+    max-width: 960px;
 
 }
 
-#nav .Prev{
+#nav .Prev {
     padding: 0 24px 0 0;
 }
 

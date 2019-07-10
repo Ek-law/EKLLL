@@ -11,10 +11,21 @@
 
 <body>
     <div id="nav">
-        <a href="/EKLLL/index.html">EKLLL</a>
-        <div class="jump">
-            <a href="#" class="Prev">Prev</a>
-            <a href="#" class="Next">Next</a>
+
+        <div class="Align">
+            <div class="nav-content">
+
+                <div class="home">
+                    <a href="/EKLLL/index.html">EKLLL</a>
+                </div>
+
+
+                <div class="jump">
+                    <a href="#" class="Prev">Prev</a>
+                    <a href="#" class="Next">Next</a>
+                </div>
+
+            </div>
         </div>
     </div>
 
@@ -44,17 +55,17 @@
 
     <script type="text/javascript">
 
-        var prevScrollpos = window.pageYOffset:
-            window.onscroll = function () {
-                var currentScrollpos = window.pageYOffset;
-                if (prevScrollpos > currentScrollpos) {
-                    document.getElementById("nav").style.top = "0";
-                } else {
-                    document.getElementById("nav").style.top = "-100px";
-                }
-
-                prevScrollpos = currentScrollpos;
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollpos = window.pageYOffset;
+            if (prevScrollpos > currentScrollpos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
             }
+
+            prevScrollpos = currentScrollpos;
+        }
 
     </script>
 
