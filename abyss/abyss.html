@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./abyss.css">
+    <title>abyss</title>
+</head>
+
+<body>
+    <div id="nav">
+
+        <div class="Align">
+
+            <div class="nav-content">
+
+                <div class="home">
+                    <a href="/index.html">EKLLL</a>
+                </div>
+
+
+                <div class="jump">
+                    
+                    <a href="/cm/cm.html" class="Prev">PREV</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="title">
+        <h1>Abyss匿名论坛</h1>
+
+        <p>这是目前所在公司经营内容的一个重设计。产品上线后我通过Google Analytics以及广告投放策略重新梳理了交互流程。
+            运用了类杂志的网格加以流畅的动画来突出每一个专题。寻找差异化的同时希望将更好的价格以及产品信息传递给每一位用户</p>
+    </div>
+
+    <div id="zuopin">
+        <img src="./qietu/1-1.jpg" alt="">
+        <video src="./qietu/1-2.mp4" autoplay loop></video>
+        <img src="./qietu/2.jpg" alt="">
+        <video src="./qietu/3.mp4" autoplay loop></video>
+        <img class="font" src="./qietu/4.jpg" alt="">
+        <img class="principle" src="./qietu/5.jpg" alt="">
+        <img class="strategy" src="./qietu/6.jpg" alt="">
+        <video src="./qietu/home-tag.mp4" autoplay loop></video>
+        <video src="./qietu/tag.mp4" autoplay loop></video>
+        <video src="./qietu/pc-scroll.mp4" autoplay loop></video>
+        <video src="./qietu/post.mp4" autoplay loop></video>
+        <img src="./qietu/replay444.jpg" alt="">
+        <video src="./qietu/replay2.mp4" autoplay loop></video>
+        <img src="./qietu/news.jpg" alt="">
+        <img src="./qietu/login-top.jpg" alt="">
+        <video src="./qietu/login2.mp4" autoplay loop></video>
+        <img src="./qietu/zuihou.jpg" alt="">
+    </div>
+
+
+    <script type="text/javascript">
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollpos = window.pageYOffset;
+            if (prevScrollpos > currentScrollpos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
+            }
+
+            prevScrollpos = currentScrollpos;
+        }
+
+    </script>
+</body>
+
+</html>
