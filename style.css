@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: "campton";
-    
-    src: url(./image/Campton-BoldDEMO.otf);
-  }
 
-  @font-face {
+    src: url(./image/Campton-BoldDEMO.otf);
+}
+
+@font-face {
     font-family: 'pingfang';
     src: url(./image/PingFang.ttc);
 }
@@ -75,12 +75,12 @@ body {
     font-weight: bold;
     opacity: 0;
     font-family: "pingfang";
-    
+
 }
 
-#image .image-1:hover ~ .tag1{
+#image .image-1:hover~.tag1 {
     opacity: 1;
-} 
+}
 
 #image .image-2 {
     display: flex;
@@ -96,7 +96,6 @@ body {
     bottom: 0;
     right: 0;
     position: absolute;
-    
     font-weight: 900;
     font-size: 52px;
     line-height: 72px;
@@ -119,7 +118,7 @@ body {
     padding: 0 32px 16px 0;
     letter-spacing: inherit;
     opacity: 0;
-    
+    z-index: 99;
     font-weight: 900;
 }
 
@@ -127,6 +126,7 @@ body {
 
 .abyss-image:hover~.tag3 {
     opacity: 1;
+    z-index: 99;
 }
 
 #contact {
