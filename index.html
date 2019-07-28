@@ -21,27 +21,28 @@
                     <a href="../index.html">EKLLL</a>
                 </div>
 
-
+                <!-- <div class="jump">
+                        <a href="./resume/resume.html" class="resume" style="font-family: campton-light">RESUME</a>
+                    </div> -->
 
             </div>
         </div>
     </div>
     <div id="title">
 
-        <h1>在复杂和简洁中寻找平衡点。</h1>
-
-
-        <div class="name">
-            <h2>罗毅坤</h2>
-            <p>UI/UX designer</p>
-        </div>
+        <h1>在复杂和简洁中寻找<span style="color: #BDBDBD; font-weight: 200;">平衡点。</span></h1>
+        <!-- <div class="name-title">
+            <span class="line"></span>
+            <p class="myname">罗毅坤</p>
+            <p class="mytitle">UI/UX Designer</p>
+        </div> -->
 
     </div>
 
     <div id="image">
-        <a href="http://www.google.com">
+        <a href="./resume/resume.html">
             <div class="content">
-                <img class="image-1" src="./image/Rectangle.png" alt="">
+                <img class="image-1" src="./image/Rectangle.png" alt="" style="width: 480px">
                 <p class="tag1">简历</p>
             </div>
         </a>
@@ -52,7 +53,7 @@
                 <a href="./cm/cm.html">
                     <div class="content">
 
-                        <img class="cm-image" src="./image/Rectangle Copy.png" alt="">
+                        <img class="cm-image" src="./image/cm-smal.jpg" alt="" style="width: 440px;">
 
                         <p class="tag2">在线商城</p>
                     </div>
@@ -63,7 +64,7 @@
 
             <div class="content">
                 <a href="./abyss/abyss.html">
-                    <img class="abyss-image" src="./image/Rectangle Copy 2.png" alt="">
+                    <img class="abyss-image" src="./image/abyss-small.jpg" alt="" style="width: 440px;">
 
                     <p class="tag3">匿名论坛</p>
                 </a>
@@ -79,14 +80,29 @@
 
 
     <div id="contact">
-        <div class="email">
-            <h3>电子邮箱</h3>
-            <p>lawek2nd@gmail.com</p>
-        </div>
 
-        <div class="mobile">
-            <h3>手机</h3>
-            <p>186 6585 7767</p>
+
+        <div class="container">
+            <span class="line"></span>
+
+            <div class="Align-contact">
+                <div class="title-name">
+
+                    <p class="name">罗毅坤</p>
+                    <p class="title">图形用户界面设计师</p>
+
+                </div>
+
+
+                <div class="info">
+                    <p class="info-contact">联系方式</p>
+
+                    <p class="emailphone" style="font-weight: 200">
+                        lawek2nd@gmail.com<br>186 6585 7767</p>
+                </div>
+            </div>
+
+
         </div>
     </div>
 
@@ -116,10 +132,10 @@
                 var relY = e.pageY - offset.top;
                 var offsetMinX = $(this).width();
                 var offsetMinY = $(this).height();
-                var currentX = relX += offsetMinX * -0.2;
-                var currentY = relY += offsetMinY * -0.2;
-                var newX = currentX / 4000000;
-                var newY = currentY / 4000000;
+                var currentX = relX += offsetMinX * -0.3;
+                var currentY = relY += offsetMinY * -0.3;
+                var newX = currentX / 3500000;
+                var newY = currentY / 3500000;
                 $(this).css('transform', "matrix3d(1.025,0,0," + -newX + ",0,1.025,0," + -newY + ",0,0,1,0,0,0,0,1)");
             });
             $(".content").mouseout(function () {

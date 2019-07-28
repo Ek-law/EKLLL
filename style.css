@@ -18,9 +18,22 @@
     src: url(./image/PingFang.ttc);
 }
 
-body {
-    background-color: #1A1A1A;
+@font-face {
+    font-family: "campton-light";
+    src: url(./image/Campton-LightDEMO.otf);
 }
+
+@font-face{
+    font-family: "roboto";
+    src: url(./image/Roboto-Regular.ttf);
+}
+
+@font-face{
+    font-family: "roboto-light";
+    src: url(./image/Roboto-Light.ttf);
+}
+
+
 
 
 
@@ -28,20 +41,21 @@ body {
 #nav {
     width: 100%;
     top: 0;
-    background-color: #191919;
+    background-color: white;
     transition: top 0.8s;
     z-index: 99;
+    box-shadow: 0 0 2px 0 #E0E0E0;
 }
 
 
 .Align {
-    height: 56px;
+    height: 80px;
     display: flex;
     align-items: center;
     z-index: 1;
 }
 
-.nav-content{
+.nav-content {
     display: flex;
     justify-content: space-between;
     width: 960px;
@@ -49,31 +63,33 @@ body {
     z-index: 999;
 }
 
-.content1{
+.content1 {
     display: flex;
     color: #8D8D8D;
     font-size: 13px;
-    font-weight: 300;
+    font-weight: normal;
     font-family: "campton";
 }
 
-.content1 .email{
-    padding-right: 16px;
-}
+
 
 #nav a {
     text-decoration: none;
     font-family: "campton";
     font-weight: 100;
-    color: white;
+    color: #212121;
     font-size: 13px;
     max-width: 960px;
     height: 48px;
 }
 
-#nav .home p{
+#nav .home p {
     font-size: 13px;
     color: #8D8D8D;
+}
+
+.resume{
+    font-family: "campton-light";
 }
 
 
@@ -87,27 +103,52 @@ body {
 #title h1 {
     font-size: 52px;
     line-height: 72px;
-    color: white;
+    color: #212121;
     width: 480px;
+    font-weight: 400;
 }
 
-.name{
-    margin-top: 32px;
+/* #title .name-title {
+    position: relative;
+    margin-top: 40px;
 }
 
-#title h2 {
-    font-size: 13px;
-    line-height: 20px;
+#title .name-title .line {
+    width: 40px;
+    height: 2px;
+    background-color: #404040;
+    display: inline-block;
+    position: absolute;
+    margin-top: 12px;
+}
+
+
+#title .name-title .myname{
+    font-size: 15px;
+    line-height: 24px;
     color: white;
-    font-weight: 300;
-}
+    position: absolute;
+    margin: 0 0 0 48px;
+} */
 
-#title p {
-    font-size: 13px;
-    line-height: 20px;
-    color: #8D8D8D;
-    font-weight: 300;
-}
+/* #title .name-title .mytitle{
+    font-size: 15px;
+    line-height: 24px;
+    color: #4C4C4C;
+    position: absolute;
+    margin: 0 0 0 100px;
+   
+} */
+
+
+
+
+
+
+
+
+
+
 
 #image {
     width: 960px;
@@ -118,7 +159,15 @@ body {
     position: relative;
 }
 
+#image .content {
+    transition: all 0.8s ease;
+    transform-origin: 50% 50%;
+}
 
+#image .content:hover {
+    z-index: 1;
+    transition: all .15s ease;
+}
 
 #image .content .tag1 {
     position: absolute;
@@ -130,7 +179,7 @@ body {
     padding: 0 0 32px 0;
     font-weight: bold;
     opacity: 0;
-    font-family: "pingfang";
+    font-weight: 400;
 
 }
 
@@ -152,12 +201,13 @@ body {
     bottom: 0;
     right: 0;
     position: absolute;
-    font-weight: 900;
+    
     font-size: 52px;
     line-height: 72px;
     color: white;
     padding: 0 32px 20px 0;
     opacity: 0;
+    font-weight: 400;
 }
 
 #image .cm .cm-image:hover~.tag2 {
@@ -175,7 +225,7 @@ body {
     letter-spacing: inherit;
     opacity: 0;
     z-index: 99;
-    font-weight: 900;
+    font-weight: 400;
 }
 
 
@@ -187,25 +237,55 @@ body {
 
 #contact {
     width: 960px;
-    height: 96px;
-    margin: 72px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
+    margin: 160px auto;
 }
 
-#contact h3 {
-    color: white;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 20px;
+#contact .line {
+    width: 960px;
+    height: 1px;
+    background-color: #EDEDED;
+    display: block;
 }
 
-#contact p {
-    color: #8D8D8D;
+#contact .Align-contact {
+    position: relative;
+}
+
+#contact .title-name {
+    position: absolute;
+}
+
+#contact .info {
+    margin: 80px 0 120px 240px;
+}
+
+.title-name .name {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.title-name .title {
+    font-size: 15px;
+    color: #959595;
     font-weight: 300;
-    font-size: 13px;
-    line-height: 20px;
+    line-height: 28px;
+    margin: 4px 0 0 0;
+}
+
+.info .info-contact {
+    font-size: 15px;
+    color: #212121;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.emailphone {
+    font-size: 15px;
+    color: #B2B2B2;
+    font-weight: 300;
+    line-height: 28px;
+    font-family: "roboto-light";
+    margin: 4px 0 0 0;
 }

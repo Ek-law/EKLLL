@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./resume-style.css">
+</head>
+
+<body>
+    <div id="nav">
+
+        <div class="Align">
+
+            <div class="nav-content">
+
+                <div class="home">
+                    <a href="../index.html">EKLLL</a>
+                </div>
+
+
+                <div class="jump">
+                    <a href="../cm/cm.html" class="Prev">NEXT</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="introduction">
+        <!-- <div class="title-about">
+            <span class="title-line" style="width: 40px;
+            height: 2px;
+            background-color: #191919;
+            display: inline-block;"></span>
+            <h4 class="small">关于我</h4>
+        </div> -->
+        
+        
+        <p class="introduction-info">
+            先后参与了Web、App、小程序等产品的用户体验设计。负责项目设计分析、交互设计、可用性等细节提升工作。制定设计规范，保证统一性。输出高保真交互原型和图形界面设计。日常运营活动以及广告投放视频等</p>
+        <img class="eklll" src="./720.jpg" style="width: 360px;">
+    
+    
+    
+    </div>
+
+    <span class="line"></span>
+
+    <div id="experience">
+        <h1 class="content1">工作经历</h1>
+        <div class="experience-content">
+            <div class="aimeigou">
+                <p class="company">爱美购科技有限公司</p>
+                <p class="time"><span style="color: #212121">UI, UX, Interaction, Graphic Design</span> &nbsp &nbsp2017.04 - Present</p>
+                <p class="detail">
+                    先后参与了Web、App、小程序等产品的用户体验设计。负责项目设计分析、交互设计、可用性等细节提升工作。制定设计规范，保证统一性。输出高保真交互原型和图形界面设计。日常运营活动以及广告投放视频等
+                </p>
+            </div>
+
+            <div class="sidixinxi">
+                <p class="company">思迪信息股份有限公司</p>
+                <p class="time"><span style="color: #212121"> UI, Graphic Design</span> &nbsp &nbsp 2015.03 - 2017.04</p>
+                <p class="detail">
+                    完成前期投标售前概念设计。确认立项后配合产品经理与客户梳理业务功能需求。待落实交互逻辑后输出高保真效果图。同时维护客户的运营活动与推广的视觉设计
+                </p>
+            </div>
+
+
+            <div class="saike">
+                <p class="company">赛克萨斯科技有限公司</p>
+                <p class="time"><span style="color: #212121">Graphic Design</span> &nbsp &nbsp2013.07 - 2015.03</p>
+                <p class="detail">
+                    优化淘宝店内宝贝描述、美化产品图片。包括图片修改和制作、广告条的设计，店铺促销期间的设计排版及促销宣传版面，配合推广人员做推广宣传图、直通车及钻石展位推广图片
+                </p>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="tools">
+        <h1 class="content2">使用工具</h1>
+        <div class="tools-content">
+            <ul>
+                <li style="list-style: none;">Sketch</li>
+                <li style="list-style: none;">Illustrator</li>
+                <li style="list-style: none;">Photoshop</li>
+                <li style="list-style: none;">After Effects</li>
+            </ul>
+
+            <ul>
+                <li style="list-style: none;">Figma</li>
+                <li style="list-style: none;">Principle</li>
+                <li style="list-style: none;">Html CSS</li>
+                <li style="list-style: none;">Javascript</li>
+            </ul>
+
+            <ul>
+                <li style="list-style: none;">Axure</li>
+                <li style="list-style: none;">Maze</li>
+                <li style="list-style: none;">Invision</li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div id="contact">
+
+
+        <div class="container">
+            <span class="line"></span>
+
+            <div class="Align-contact">
+                <div class="title-name">
+
+                    <p class="name">罗毅坤</p>
+                    <p class="title">图形用户界面设计师</p>
+
+                </div>
+
+
+                <div class="info">
+                    <p class="info-contact">联系方式</p>
+
+                    <p class="emailphone">
+                        lawek2nd@gmail.com<br>186 6585 7767</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollpos = window.pageYOffset;
+            if (prevScrollpos > currentScrollpos) {
+                document.getElementById("nav").style.top = "0";
+            } else {
+                document.getElementById("nav").style.top = "-100px";
+            }
+
+            prevScrollpos = currentScrollpos;
+        }
+
+    </script>
+</body>
+
+</html>
