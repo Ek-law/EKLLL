@@ -128,7 +128,8 @@
                     <p class="info-contact">联系方式</p>
 
                     <p class="emailphone">
-                        lawek2nd@gmail.com<br>186 6585 7767</p>
+                        <a href="mailto:lawek2nd@gmail.com"
+                            style="text-decoration:none;color:#b2b2b2; ">lawek2nd@gmail.com</a><br>186 6585 7767</p>
                 </div>
             </div>
 
@@ -141,6 +142,33 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
+    <a id="button">
+        <img src="../image/top.svg" alt="">
+    </a>
+
+
+
+
+
+
+
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+
+    </script>
 
 
 
